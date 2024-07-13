@@ -2,5 +2,5 @@
 > Welcome to my Linux home page
 
 ## note
-[点击这里](./Linux_Note_Command/LinuxNote.md)
+[点击这里](./Linux_Note_Command/LinuxNote.md)  
 [click_here](./Linux_Note_Command/LinuxNote.md)
