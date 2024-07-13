@@ -27,20 +27,25 @@
 > 命令可连写：`ls -alh`
 > 具体可以`man ls`查看ls使用方法与参数说明
 > 通常shell写法中--后加小写，-后加大写
+
+### cd
 - `cd`:
     change directory缩写，改变目录
 
+### pwd
 - `pwd`命令
     是print working directory,打印工作目录，即显示当前所在目录的绝对路径
 
+---
 
-## 2-系统文件和目录结构
+### 2-系统文件和目录结构
 
 ![alt](imgs/sysDir.png)
 
 |目录|说明|
 |--|--|
-|/bin|是Binaries（二进制文件）的缩写，命令/mnt/opt/media用于挂载的空目录|
+|/bin|是Binaries（二进制文件）的缩写，命令|
+|/mnt|/opt/media用于挂载的空目录|
 |/boot|启动文件目录|
 |/dev|是Device（设备）缩写|
 |/etc|主要放置应用配置文件|
@@ -55,8 +60,26 @@
 
 > 详细请执行 `ls /`，或执行`sudo apt install tree`安装tree cli后执行`tree /`，也可方便查看执行`tree / >> ~/yourLinuxDir_info.txt`,执行完后双击打开个人主目录下`yourLinuxDir_info.txt`文件
 
+---
+
 ## 3-文件拷贝与复制
 
+### cp
+- `cp 源 目标`
+    copy缩写，用于复制粘贴
+    `cp source dest` （如果dest文件不存在就创建，存在就覆盖）
+    `cp source1 source2 source3 source... dest` （复制source123..到已存在的dest目录）
+    `cp -r 源目录 目标目录` （复制递归复制源目录文件到目标目录）
+
+### mv
+`mv 源 目标`
+    move的缩写，转移
+    `mv source dest` （如果dest文件不存在就创建，存在就覆盖）
+    `mv source1 source2 source3 source... dest` （复制source123..到已存在的dest目录）
+    `mv -r 源目录 目标目录` （复制递归复制源目录文件到目标目录）
+    `mv 源文件 同路径下新文件名`（重命名）
+
+---
 
 ## 4-文件创建与删除
 
