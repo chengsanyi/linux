@@ -10,6 +10,8 @@
 
 > `..` 上一级目录
 
+> `lscpu` 查看本机cpu信息
+
 > `uname-a` 指令查看本机信息
 
 > `lspci` 命令用于显示所有PCI总线上的设备信息，包括显卡、网卡等。
@@ -108,6 +110,43 @@
 ---
 
 ## 4-文件创建与删除
+
+### touch
+- `touch file1 file2 ...`
+
+    `touch filename` 不存在就创建，否则修改创建时间，
+    
+    `touch file{1..30}`  序号文件
+    
+    - 参数
+        
+        -t，指定文件创建时间
+        
+        `touch -t 111234.6 filename`
+
+### mkdir
+- `mkdir dir1 dir2 ...`
+
+    `mkdir dirname` 创建目录
+    
+    `mkdir dirname{1..30}` 序号目录
+
+
+    
+    - 参数
+        
+        -p，连级创建目录
+        
+        `mkdir ~/Desktop/mytest/t1/t2`
+
+
+
+### ▲ rm
+使用删除目录是需要查看一遍指令是否错误防止删除错误，导致其他后果如删库跑路: ~rm -rf~
+- `rm [-rf] filename/dir`
+    -f > force强制武力的，在这里是强制删除，主要是用来忽略警告
+    -r > 递归删除层级目录
+
 
 
 ## 5-读取文本文件内容
