@@ -147,10 +147,37 @@
     -f > force强制武力的，在这里是强制删除，主要是用来忽略警告
     -r > 递归删除层级目录
 
-
-
 ## 5-读取文本文件内容
 
+### cat
+- `cat filename # 必须为文本文件`
+    - 参数
+        -n #参数显示行号
+        `cat -n filename`
+    - 例
+        `cat file1 > file2` # 将file1文件中的内容复制到file2中 可加-n增加行号
+        `cat file1 |grep word` # 返回word所在的一行
+
+### head
+
+- `head [参数] filename` # 文本文件
+    - 参数
+        -n #显示头几行
+        `head -5 filename`
+        -f 
+    - 例
+        ` head -n 2 filename1` #显示filename1的前两行
+
+
+### tail
+
+- `tail [参数] filename` # 文本文件
+    - 参数
+        -n #显示头几行
+        `tail -5 filename`
+        -f # 实时显示添加到末尾的行，用于实时跟踪日志
+    - 例
+        ` tail -n 2 filename1` #显示filename1的最后两行
 
 ## 6-分屏阅读信息
 
