@@ -156,7 +156,7 @@
         `cat -n filename`
     - 例
         `cat file1 > file2` # 将file1文件中的内容复制到file2中 可加-n增加行号
-        `cat file1 |grep word` # 返回word所在的一行
+        `cat file1 |grep -i word` # 返回word所在的一行,忽略大小写
 
 ### head
 
@@ -180,6 +180,29 @@
         ` tail -n 2 filename1` #显示filename1的最后两行
 
 ## 6-分屏阅读信息
+
+- more filename #分屏阅读
+    - 前进行：回车键
+    - 后退行：空格键
+    - 退出：q
+    - 扩展
+        - cat file | more
+        - history | more
+
+- less--更强大的分屏阅读
+
+- 基本用法： `less filename`
+    - 前进 ↑ ↓
+    - 后退 pgup或bpgdn或空格
+
+- 扩展用法：
+    - car filename | less
+    - history | less
+
+- 和 more 的区别 
+    - more 只能前进不能随意看
+    - cat more 都加载文件全部，less 只加载部分，多大文件有好作用
+
 
 
 ## 7-文件编辑器vi初步
