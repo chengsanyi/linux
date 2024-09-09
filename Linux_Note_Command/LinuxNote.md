@@ -206,12 +206,113 @@
 
 
 ## 7-文件编辑器vi初步
-
-
 ## 8-文件编辑器vi扩展
+推荐使用“macro“
+`$ sudo apt install micro`
+ctrl+S保存文件Ctrl+q退出编辑
+
+Vi或VIM使用方法：
+`vi/vim filename`进入文件开启命令模式输入`i\a\o`进入输入模式`ESC`退出当前模式，`:`进入底线命令行模式`:q\:q!`回车退出vi
+
+### 指令说明：
+i 从光标当前位置插入
+o 新建行开始
+h、j、k、l 对应左下右上
+x 删除当前光标位置字符
+dd 删除当前行
+
+:w 写入
+:q 退出 :q! 强制退出不修改
 
 
 ## 9-文件权限属性修改
 
 
-## 10-文件查找find_locate与通.
+
+## 10-文件查找find_locate与通配符
+
+## 11-文件操作命令小结
+
+## 12-网络命令_ping_ifconfig 10:57
+
+## 13-网络命令_route_ip
+
+## 14-网络命_ip配置持久化
+
+## 15-网络命令_netstat
+
+## 16-网络命令_nslookup
+
+## 17-网络命令_traceroute
+
+## 18-网络命令_telnet_nmap
+
+## 19-网络命令_wget_curl
+
+## 20-网络命令小结
+
+## 21-软件安装_rpm命令
+
+## 22-软件安装_yum命令
+
+## 23-服务管理_systemctl命令
+
+## 24-进程管理_ps命令
+
+## 25-进程管理_top命令
+
+## 26-进程管理_kill命令
+
+## 27-软件安装_服务与进程管理小结
+
+## 28-Linux防火墙_firewalld
+
+## 29-Linux安全_SELinux
+
+## 30-Linux硬件资源管理
+
+## 31-Linux磁盘管理_df_mount命令
+
+## 32-Linux磁盘管理_du命令
+
+## 33-Linux磁盘管理_分区格式化_fdisk
+
+## 34-Linux磁盘管理_磁盘挂载持久化
+
+## 35-Linux磁盘管理_iostat
+
+## 36-Linux磁盘管理_iotop
+
+## 37-Linux网络流量统计_iftop
+
+## 38-Linux硬件资源管理小结
+
+## 39-Linux系统日志_rsyslog
+
+## 41-Linux系统日志_journalctl
+
+## 42-Linux时间设置
+
+## 43-Linux系统日志小结
+
+## 44-Linux用户管理_添加删除用户
+
+## 45-Linux用户修改与组管理
+
+## 46-Linux用户组管理_su与sudo
+
+## 47-Linux应用
+
+## 48-Linux应用_SSH
+
+## 49-Linux应用_SSH服务配置
+
+## 50-Linux应用_LAMP_httpd_mysql
+
+## 51-Linux应用_LAMP_php安装
+
+## 52-Linux应用小结
+
+## 53-Linux实践主动式学习FTP
+
+## 54-Linux基础篇总结
